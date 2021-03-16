@@ -1,0 +1,8 @@
+{{ $css := resources.Get "css/index.css" | postCSS }}
+
+{{ if hugo.IsProduction }}
+  {{ $css := $css | minify | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}"/>
+{{ else }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}"/>
+{{ end }}

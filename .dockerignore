@@ -1,0 +1,10 @@
+**/.DS_Store
+
+.dockerignore
+.gitignore
+Dockerfile
+Makefile
+
+.git
+/public
+/resources

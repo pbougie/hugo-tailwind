@@ -1,0 +1,10 @@
+baseURL: http://localhost/
+cleanDestinationDir: true
+disableHugoGeneratorInject: true
+disableKinds:
+- robotsTXT
+- RSS
+- taxonomy
+- taxonomyTerm
+params:
+  name: Hugo-Tailwind
